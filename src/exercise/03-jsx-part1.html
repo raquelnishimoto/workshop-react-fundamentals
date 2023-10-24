@@ -1,0 +1,25 @@
+<!-- We are going to reimplement this code using React JSX -->
+<!-- https://react.dev/learn/writing-markup-with-jsx -->
+
+<html>
+  <body>
+    <div id="root">
+      <!-- Add Babel stand alone https://babeljs.io/docs/babel-standalone -->
+      <script src="https://unpkg.com/react@18.1.0/umd/react.development.js"></script>
+      <script src="https://unpkg.com/react-dom@18.1.0/umd/react-dom.development.js"></script>
+      <!-- <script src="https://unpkg.com/@babel/standalone@7.12.4/babel.js"></script> -->
+
+      <!-- Replace type with text/babel-->
+      <script type='module'>
+        const rootElement = document.getElementById('root')
+        const props = {children: 'Hello Pilots'}
+        // That's not how the communite creates elements in React
+        // Replace React.createElement('div', props) with <div/>
+        const element = React.createElement('div', props)
+
+        const root = ReactDOM.createRoot(rootElement)
+        root.render(element)
+      </script>
+    </div>
+  </body>
+</html>

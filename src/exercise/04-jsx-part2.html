@@ -1,0 +1,24 @@
+<!-- What if we needed to render two divs? -->
+
+<html>
+  <body>
+    <div id="root">
+      <script src="https://unpkg.com/react@18.1.0/umd/react.development.js"></script>
+      <script src="https://unpkg.com/react-dom@18.1.0/umd/react-dom.development.js"></script>
+      <script src="https://unpkg.com/@babel/standalone@7.12.4/babel.js"></script>
+
+      <script type='text/babel'>
+        const rootElement = document.getElementById('root')
+
+        // How would you render:
+        // Hello Pilots
+        // Goodbye Pilots
+        const elementHello = <div>Hello Pilots</div>
+        const elementGoodbye = <div>Goodbye Pilots</div>
+
+        const root = ReactDOM.createRoot(rootElement)
+        root.render(elementHello)
+      </script>
+    </div>
+  </body>
+</html>
