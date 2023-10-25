@@ -1,0 +1,18 @@
+<!-- Render  Hello Pilots using JavaScript-->
+<!-- This will help you understand how React works under the hood -->
+
+<!--   https://developer.mozilla.org/en-US/docs/Web/HTML/Element/script#attributes -->
+<!--   https://developer.mozilla.org/en-US/docs/Web/JavaScript/Guide/Modules -->
+<html>
+  <body>
+    <script type="module">
+      const root = document.createElement('div')
+      root.id = 'root'
+      document.body.append(root)
+
+      const element = document.createElement('div')
+      element.textContent = "Hello Pilots"
+      document.getElementById('root').append(element)
+    </script>
+  </body>
+</html>
